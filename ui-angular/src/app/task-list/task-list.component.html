@@ -1,0 +1,11 @@
+<div>
+    <h2>Open</h2>
+    <mat-list>
+        <app-task-list-element *ngFor="let task of openTasks | async" [task]="task"></app-task-list-element>
+    </mat-list>
+
+    <h2>Closed</h2>
+    <mat-list>
+        <app-task-list-element *ngFor="let task of closedTasks | async" [task]="task"></app-task-list-element>
+    </mat-list>
+</div>
